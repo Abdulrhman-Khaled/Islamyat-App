@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sadkaa"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:onClick="sadka_menu"
+        android:title="عن المبرمج"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/ic_info"
+        android:onClick="aboutme_menu"
+        android:title="عن المبرمج"
+        app:showAsAction="always"></item>
+
+</menu>

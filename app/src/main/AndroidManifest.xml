@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bodykh.IslamyatApp">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:name="com.bodykh.IslamyatApp.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/finalislamiclogo"
+        android:label="إسْلَاميات\nIslamyat"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.bodykh.IslamyatApp.EverDayTasks" />
+        <activity android:name="com.bodykh.IslamyatApp.salahTimes"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bodykh.IslamyatApp.ro2yaa" />
+        <activity android:name="com.bodykh.IslamyatApp.adiaaAdp" />
+        <activity android:name="com.bodykh.IslamyatApp.adiaa" />
+        <activity android:name="com.bodykh.IslamyatApp.azkaarAdp" />
+        <activity android:name="com.bodykh.IslamyatApp.azkaar" />
+        <activity android:name="com.bodykh.IslamyatApp.quranStoriesadp" />
+        <activity android:name="com.bodykh.IslamyatApp.anbiaa" />
+        <activity android:name="com.bodykh.IslamyatApp.quranStories" />
+        <activity android:name="com.bodykh.IslamyatApp.hadithbabAdp" />
+        <activity android:name="com.bodykh.IslamyatApp.hadithbab" />
+        <activity android:name="com.bodykh.IslamyatApp.hadithgeneral" />
+        <activity android:name="com.bodykh.IslamyatApp.hadith"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bodykh.IslamyatApp.anbiaa_adapter" />
+        <activity android:name="com.bodykh.IslamyatApp.adiaawazkaar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bodykh.IslamyatApp.stories"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bodykh.IslamyatApp.quraan_adpter" />
+        <activity android:name="com.bodykh.IslamyatApp.qibla"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bodykh.IslamyatApp.quran" />
+        <activity android:name="com.bodykh.IslamyatApp.sb7aa"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bodykh.IslamyatApp.Mainpage"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.bodykh.IslamyatApp.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service android:name="com.bodykh.IslamyatApp.FetchAddressIntentService" />
+    </application>
+
+</manifest>

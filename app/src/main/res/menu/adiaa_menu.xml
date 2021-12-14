@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/textsize"
+        android:icon="@drawable/ic_txtsize"
+        android:onClick="changetxtsize"
+        android:title="تغيير حجم الخط"
+        app:showAsAction="always"></item>
+</menu>

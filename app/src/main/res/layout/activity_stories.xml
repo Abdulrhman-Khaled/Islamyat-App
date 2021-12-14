@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/color4"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".stories">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="19dp"
+        android:background="@drawable/homebutton"
+        android:drawableTop="@drawable/ic_anbiaa"
+        android:gravity="center"
+        android:onClick="anbiaa_stories"
+        android:padding="20dp"
+        android:text="مُعْجِزَاتِ الْأَنْبِيَاءِِ"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color1"
+        android:textSize="35sp"
+        android:textStyle="normal|bold"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="19dp"
+        android:background="@drawable/homebutton"
+        android:drawableTop="@drawable/ic_quraanstories"
+        android:gravity="center"
+        android:onClick="quraan_stories"
+        android:padding="20dp"
+        android:text="قَصَص الْقُرْآنِ الْكَرِيمِ"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color1"
+        android:textSize="35sp"
+        android:textStyle="normal|bold"></Button>
+</LinearLayout>

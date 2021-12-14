@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clickplus1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color4"
+    android:orientation="vertical"
+    tools:context=".sb7aa">
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="0"
+        android:textAllCaps="true"
+        android:textColor="@color/color1"
+        android:textSize="200dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="أضغط فِي أَيِّ مَكَان عَلِيّ الشَّاشَة لِلتَّسْبِيح"
+        android:textAllCaps="true"
+        android:textColor="@color/color1"
+        android:textSize="24sp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/butreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/homebutton"
+        android:gravity="center"
+        android:text="\t\tإعَادَة تَعْيِين\t\t"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color1"
+        android:textSize="25dp"
+        android:textStyle="normal|bold"></Button>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/color4"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".hadith">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="19dp"
+        android:background="@drawable/homebutton"
+        android:drawableTop="@drawable/ic_7ades2"
+        android:gravity="center"
+        android:onClick="hadith_bab"
+        android:padding="20dp"
+        android:text="أَبْوَاب الْحَدِيثِ الشَّرِيفِ"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color1"
+        android:textSize="35sp"
+        android:textStyle="normal|bold"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="19dp"
+        android:background="@drawable/homebutton"
+        android:drawableTop="@drawable/ic_7ades2"
+        android:gravity="center"
+        android:onClick="hadith_general"
+        android:padding="20dp"
+        android:text="أَحَادِيثَ نَبَوِيَّةٍ عَامَّة"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color1"
+        android:textSize="35sp"
+        android:textStyle="normal|bold"></Button>
+</LinearLayout>

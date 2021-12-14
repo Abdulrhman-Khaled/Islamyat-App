@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/color4"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".adiaawazkaar">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="19dp"
+        android:background="@drawable/homebutton"
+        android:drawableTop="@drawable/ic_adiaa"
+        android:gravity="center"
+        android:onClick="button_adiaa"
+        android:padding="20dp"
+        android:text="أَدْعِيَة"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color1"
+        android:textSize="35sp"
+        android:textStyle="normal|bold"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="19dp"
+        android:background="@drawable/homebutton"
+        android:drawableTop="@drawable/ic_azkaar"
+        android:gravity="center"
+        android:onClick="button_azkar"
+        android:padding="20dp"
+        android:text="أَذْكَار"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color1"
+        android:textSize="35sp"
+        android:textStyle="normal|bold"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="19dp"
+        android:background="@drawable/homebutton"
+        android:drawableTop="@drawable/ic_ro2yaa"
+        android:gravity="center"
+        android:onClick="button_ro2yaa"
+        android:padding="20dp"
+        android:text="الرُّقية الشَّرْعِيَّةِ"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color1"
+        android:textSize="35sp"
+        android:textStyle="normal|bold"></Button>
+</LinearLayout>

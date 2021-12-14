@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/deleteall"
+        android:icon="@drawable/ic_delete"
+        android:title="حذف الكل"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/addtodo"
+        android:icon="@drawable/ic_add_circle"
+        android:title="اضافة"
+        app:showAsAction="always"></item>
+
+</menu>

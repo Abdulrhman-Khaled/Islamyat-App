@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color4"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:scrollbars="vertical"
+    android:weightSum="4"
+    tools:context=".Mainpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/homebutton"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0000هـ"
+            android:textColor="@color/color1"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="اسم الشهر"
+            android:textColor="@color/color1"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="@color/color1"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="تَارِيخِ الْيَوْمِ :"
+            android:textColor="@color/color1"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/butsalah"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/homebutton"
+            android:drawableTop="@drawable/ic_times"
+            android:gravity="center"
+            android:onClick="button_Salah"
+            android:paddingTop="20dp"
+            android:text="مَوَاقِيت الصَّلَاة"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/color1"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"></Button>
+
+        <Button
+            android:id="@+id/butmissions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/homebutton"
+            android:drawableTop="@drawable/ic_tasks"
+            android:gravity="center"
+            android:onClick="button_tasks"
+            android:paddingTop="20dp"
+            android:text="الْمَهَامّ اليَوْمِيَّة"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/color1"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"></Button>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/butquraan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/homebutton"
+            android:drawableTop="@drawable/ic_quraan"
+            android:gravity="center"
+            android:onClick="button_quraan"
+            android:paddingTop="20dp"
+            android:text="ٱلۡقُرۡآن ٱلۡكَرِيمُ"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/color1"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"></Button>
+
+        <Button
+            android:id="@+id/butsb7aa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/homebutton"
+            android:drawableTop="@drawable/ic_sb7aa"
+            android:gravity="center"
+            android:onClick="button_sb7aa"
+            android:paddingTop="20dp"
+            android:text="المِسْبَحَةُ"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/color1"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/but7adees"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/homebutton"
+            android:drawableTop="@drawable/ic_7ades"
+            android:gravity="center"
+            android:onClick="button_7adees"
+            android:paddingTop="20dp"
+            android:text="الْأَحَادِيثِ النَّبَوِيَّةِ"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/color1"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"></Button>
+
+        <Button
+            android:id="@+id/butqipla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/homebutton"
+            android:drawableTop="@drawable/ic_qibla"
+            android:gravity="center"
+            android:onClick="button_qipla"
+            android:paddingTop="20dp"
+            android:text="الْقِبْلَة"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/color1"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/butquraa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/homebutton"
+            android:drawableTop="@drawable/ic_adiaawazkaar"
+            android:gravity="center"
+            android:onClick="button_adiaawazkaar"
+            android:paddingTop="20dp"
+            android:text="أَدْعِيَة وَأَذْكَار"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/color1"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"></Button>
+
+        <Button
+            android:id="@+id/butanbiaa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/homebutton"
+            android:drawableTop="@drawable/ic_stories"
+            android:gravity="center"
+            android:onClick="button_stories"
+            android:paddingTop="20dp"
+            android:text="قَصَص وَمُعْجِزَات"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/color1"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"></Button>
+    </LinearLayout>
+
+</LinearLayout>

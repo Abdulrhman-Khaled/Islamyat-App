@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225109271719",
+    "project_id": "islamyat-app",
+    "storage_bucket": "islamyat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225109271719:android:900d97f9e3076528626782",
+        "android_client_info": {
+          "package_name": "com.bodykh.IslamyatApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225109271719-50fljo689k6p4egsfgcd11r9qnsf576n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhlJPsQOVdRnXfH9xCLEJRvZC3F21sLgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225109271719-50fljo689k6p4egsfgcd11r9qnsf576n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
