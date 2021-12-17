@@ -18,8 +18,8 @@
         android:text="0"
         android:textAllCaps="true"
         android:textColor="@color/color1"
-        android:textSize="200dp"
-        android:textStyle="bold"></TextView>
+        android:textSize="200sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
         android:textAllCaps="true"
         android:textColor="@color/color1"
         android:textSize="24sp"
-        android:textStyle="bold"></TextView>
+        android:textStyle="bold"/>
 
     <Button
         android:id="@+id/butreset"
@@ -44,8 +44,8 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/color1"
-        android:textSize="25dp"
-        android:textStyle="normal|bold"></Button>
+        android:textSize="25sp"
+        android:textStyle="normal|bold"/>
 
 
 </LinearLayout>

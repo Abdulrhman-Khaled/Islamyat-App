@@ -32,8 +32,9 @@ public class sb7aa extends AppCompatActivity {
         setContentView(R.layout.activity_sb7aa);
         setTitle("Rosary - المِسْبَحَةُ");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-            getWindow().setNavigationBarColor(getResources().getColor(R.color.color2));}
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setNavigationBarColor(getResources().getColor(R.color.color2));
+        }
         butreset = findViewById(R.id.butreset);
         counter = findViewById(R.id.counter);
         clickplus1 = findViewById(R.id.clickplus1);
@@ -58,7 +59,7 @@ public class sb7aa extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 v.startAnimation(buttonClick);
-                AlertDialog dialog = new AlertDialog.Builder(sb7aa.this)
+                new AlertDialog.Builder(sb7aa.this)
                         .setTitle("إعَادَة تَعْيِين")
                         .setMessage("هل تريد اعادة المسبحة الي الصفر؟")
                         .setPositiveButton("نعم", new DialogInterface.OnClickListener() {
@@ -81,7 +82,7 @@ public class sb7aa extends AppCompatActivity {
 
     private void update() {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREF, MODE_PRIVATE);
-        text = sharedPreferences.getString(TEXT, "");
+        text = sharedPreferences.getString(TEXT, "0");
         counter.setText(text);
     }
 
