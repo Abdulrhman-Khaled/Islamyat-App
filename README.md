@@ -13,6 +13,7 @@
 
 ## (4) Commands
 open a command prompt and run the following commands, one at a time:
+
 **-> git clone https://github.com/0xRyies/Passport-Recognition-API.git**
 
 **-> cd Passport-Recognition-API**
@@ -45,6 +46,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
