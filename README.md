@@ -34,15 +34,11 @@
 # Contact With Developer
 **you can contact me via :**
 
-**-[FaceBook](https://www.facebook.com/abdalrahman.khaled.54/).**
-
-**-[WhatsApp](https://wa.me/201148472090).**
-
-**-[LinkedIn](https://www.linkedin.com/in/abdulrhman-khaled-91a3b821a).**
-
-**-[Instagram](https://www.instagram.com/bodykh_/).**
-
-**-[Telegram](https://t.me/Bodykh1).**
+- **[FaceBook](https://www.facebook.com/abdalrahman.khaled.54/).**
+- **[WhatsApp](https://wa.me/201148472090).**
+- **[LinkedIn](https://www.linkedin.com/in/abdulrhman-khaled-91a3b821a).**
+- **[Instagram](https://www.instagram.com/bodykh_/).**
+- **[Telegram](https://t.me/Bodykh1).**
 
 # License
 MIT License
