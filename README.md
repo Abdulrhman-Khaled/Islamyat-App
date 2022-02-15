@@ -1,4 +1,4 @@
-# Islamyat App - تطبيق اسلاميات
+# Islamyat App - تطبيق إسلاميات
 ### It is an Islamic Android application that includes many sections that are important for every Muslim in his daily life.
 ![IslamyatApp Poster](https://user-images.githubusercontent.com/58918060/154119573-660d2914-7a71-428e-abfd-d4bb71aa1fc8.jpg)
 # Programming Languages and IDEs Used
@@ -22,23 +22,23 @@
 **The main page of the application and it contains the buttons to move to the rest of the application parts and it also contains an info button in the action bar and this contains the ways to contact with the developer.**
 ### 3- App Parts
 **The application contains many parts and they are:**
-- Hijri daily date.
-- The Holy Quran.
-- Rosary.
-- Prophetic tradition.
-- Qibla prayer.
-- Duas and Remembrances.
-- Stories and miracles.
-- Daily tasks of a Muslim.
+- **Hijri daily date.**
+- **The Holy Quran.**
+- **Rosary.**
+- **Prophetic tradition.**
+- **Qibla prayer.**
+- **Duas and Remembrances.**
+- **Stories and miracles.**
+- **Daily tasks of a Muslim.**
 
 # Contact With Developer
 **you can contact me via :**
 
-- **[FaceBook](https://www.facebook.com/abdalrahman.khaled.54/).**
-- **[WhatsApp](https://wa.me/201148472090).**
-- **[LinkedIn](https://www.linkedin.com/in/abdulrhman-khaled-91a3b821a).**
-- **[Instagram](https://www.instagram.com/bodykh_/).**
-- **[Telegram](https://t.me/Bodykh1).**
+- **[FaceBook](https://www.facebook.com/abdalrahman.khaled.54/)**
+- **[WhatsApp](https://wa.me/201148472090)**
+- **[LinkedIn](https://www.linkedin.com/in/abdulrhman-khaled-91a3b821a)**
+- **[Instagram](https://www.instagram.com/bodykh_/)**
+- **[Telegram](https://t.me/Bodykh1)**
 
 # License
 MIT License
