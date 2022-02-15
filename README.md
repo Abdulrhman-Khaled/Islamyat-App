@@ -21,7 +21,7 @@
 ### 2-Home Page
 **The main page of the application and it contains the buttons to move to the rest of the application parts and it also contains an info button in the action bar and this contains the ways to contact with the developer.**
 ### 3- App Parts
-**The application contains many parts and they are:
+**The application contains many parts and they are:**
 - Hijri daily date.
 - The Holy Quran.
 - Rosary.
@@ -29,7 +29,7 @@
 - Qibla prayer.
 - Duas and Remembrances.
 - Stories and miracles.
-- Daily tasks of a Muslim.**
+- Daily tasks of a Muslim.
 
 # Contact With Developer
 **you can contact me via :**
