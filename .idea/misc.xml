@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/BodyKh/AndroidStudioProjects/IslamyatApp/app/src/main/res/layout/activity_sb7aa.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/BodyKh/AndroidStudioProjects/IslamyatApp/app/src/main/res/font/aclonica.xml" value="0.28" />
+        <entry key="..\:/Users/BodyKh/AndroidStudioProjects/IslamyatApp/app/src/main/res/font/arizonia.xml" value="0.28" />
+        <entry key="..\:/Users/BodyKh/AndroidStudioProjects/IslamyatApp/app/src/main/res/font/petrona.xml" value="0.14322916666666666" />
       </map>
     </option>
   </component>

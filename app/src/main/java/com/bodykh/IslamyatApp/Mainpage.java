@@ -43,7 +43,6 @@ public class Mainpage extends AppCompatActivity {
     private static final int REQUEST_CODE_LOCATION_PERMISSION = 1;
     public static String cityNameGetter;
     TextView year, day, month;
-    TextView cityname;
     private DatabaseHelper mDBHelper;
     private SQLiteDatabase mDb;
     private ResultReceiver resultReceiver;
