@@ -6,12 +6,11 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.SET_ALARM" />
+
     <application
         android:name="com.bodykh.IslamyatApp.AppController"
-        android:allowBackup="true"
-        android:icon="@drawable/finalislamiclogo"
-        android:label="إسْلَاميات\nIslamyat"
+        android:icon="@drawable/islamiclogo"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true">
@@ -45,10 +44,10 @@
         <activity android:name="com.bodykh.IslamyatApp.Mainpage"
             android:screenOrientation="portrait"/>
         <activity android:name="com.bodykh.IslamyatApp.MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
-
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
@@ -58,5 +57,4 @@
 
         <service android:name="com.bodykh.IslamyatApp.FetchAddressIntentService" />
     </application>
-
 </manifest>

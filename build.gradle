@@ -3,7 +3,6 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-      //  maven { url 'https://repo1.maven.org/maven2' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.2.1'
@@ -18,9 +17,8 @@ allprojects {
     repositories {
         mavenCentral()
         google()
-      //  maven { url "https://api.tplmaps.com:8080/artifactory/example-repo-local/" }
+        maven { url "https://api.tplmaps.com:8080/artifactory/example-repo-local/" }
         maven { url 'https://jitpack.io' }
-      //  maven { url 'https://repo1.maven.org/maven2' }
     }
 }
 

@@ -1,5 +1,6 @@
 package com.bodykh.IslamyatApp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -32,6 +33,7 @@ public class quran extends AppCompatActivity {
             " الضُّحَى", " الشَّرْحَ", " التّينَ", " الْعَلَقَ", " الْقَدْرَ", " الْبَيِّنَةَ", " الزَّلْزَلَةَ", " الْعَادِيَاتِ", " الْقَارِعَةَ", " التَّكَاثُرَ", " الْعَصْرَ", " الْهَمْزَةَ",
             " الْفِيلَ", " قُرَيْشَ", " الْمَاعُونَ", " الْكَوْثَرَ", " الْكَافِرُونَ", " النَّصْرَ", " الْمَسَدَ", " الْإِخْلَاَصَ", " الْفَلْقَ", " النَّاسَ"
     };*/
+    @SuppressLint("Range")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

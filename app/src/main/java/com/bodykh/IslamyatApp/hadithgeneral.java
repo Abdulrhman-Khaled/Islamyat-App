@@ -1,5 +1,6 @@
 package com.bodykh.IslamyatApp;
 
+import android.annotation.SuppressLint;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -26,6 +27,7 @@ public class hadithgeneral extends AppCompatActivity {
     ListView hadithgen;
     private SQLiteDatabase mDb;
 
+    @SuppressLint("Range")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

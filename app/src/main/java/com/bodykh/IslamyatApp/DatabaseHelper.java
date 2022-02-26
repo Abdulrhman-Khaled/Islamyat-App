@@ -1,5 +1,6 @@
 package com.bodykh.IslamyatApp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -45,8 +46,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
             do {
 
-                String nameen = cursor.getString(cursor.getColumnIndex("sora_name_en"));
-                String namear = cursor.getString(cursor.getColumnIndex("sora_name_ar"));
+                @SuppressLint("Range") String nameen = cursor.getString(cursor.getColumnIndex("sora_name_en"));
+                @SuppressLint("Range") String namear = cursor.getString(cursor.getColumnIndex("sora_name_ar"));
 
                 Sora sora = new Sora(namear, nameen);
 

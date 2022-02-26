@@ -1,5 +1,6 @@
 package com.bodykh.IslamyatApp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -23,6 +24,7 @@ public class adiaa extends AppCompatActivity {
     ListView adiaaNameList;
     private SQLiteDatabase mDb;
 
+    @SuppressLint("Range")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,5 +1,6 @@
 package com.bodykh.IslamyatApp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -24,6 +25,7 @@ public class anbiaa extends AppCompatActivity {
     ListView anbiaalist;
     private SQLiteDatabase mDb;
 
+    @SuppressLint("Range")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
