@@ -10,6 +10,7 @@
     <application
         android:name="com.bodykh.IslamyatApp.AppController"
         android:icon="@drawable/islamiclogo"
+        android:roundIcon="@drawable/islamiclogo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         android:supportsRtl="true"

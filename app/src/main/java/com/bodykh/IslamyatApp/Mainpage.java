@@ -2,7 +2,10 @@ package com.bodykh.IslamyatApp;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.SQLException;
@@ -10,12 +13,14 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.ResultReceiver;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -45,6 +50,7 @@ public class Mainpage extends AppCompatActivity {
     TextView year, day, month;
     private DatabaseHelper mDBHelper;
     private SQLiteDatabase mDb;
+    boolean gps_enabled, network_enabled;
     private ResultReceiver resultReceiver;
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
 
@@ -150,8 +156,9 @@ public class Mainpage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainpage);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-            getWindow().setNavigationBarColor(getResources().getColor(R.color.color2));}
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setNavigationBarColor(getResources().getColor(R.color.color2));
+        }
         setTitle("Islamyat - إسْلَاميات");
         mDBHelper = new DatabaseHelper(this);
         try {
@@ -188,6 +195,34 @@ public class Mainpage extends AppCompatActivity {
             );
         } else {
             getCurrentLocation();
+
+            LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+            try {
+                gps_enabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+            } catch (Exception ex) {
+            }
+            try {
+                network_enabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+            } catch (Exception ex) {
+            }
+            if (!gps_enabled) {
+                AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+                dialog.setTitle("التحقق من تفعيل الموقع والأنترنت");
+                dialog.setMessage("لن يتم تحديد مواقيت الصلاة لان الموقع غير مفعل, الرجاء تفعيل الموقع والتحقق من الاتصال بالانترنت!");
+                dialog.setPositiveButton(("تفعيل الموقع"), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+                        Intent myIntent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                        startActivity(myIntent);
+                    }
+                });
+                dialog.setNegativeButton(("إلغاء"), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+                    }
+                });
+                dialog.show();
+            }
         }
     }
 
@@ -361,5 +396,6 @@ public class Mainpage extends AppCompatActivity {
             }
         }
     }
+
 
 }
