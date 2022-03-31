@@ -8,12 +8,12 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 public class sb7aa extends AppCompatActivity {
 
@@ -22,8 +22,8 @@ public class sb7aa extends AppCompatActivity {
     public int scounter;
     public String text;
     public AlphaAnimation buttonClick = new AlphaAnimation(0.8F, 0.8F);
-    Button butreset;
     TextView counter;
+    SwipeRefreshLayout swipeRefreshLayout;
     LinearLayout clickplus1;
 
     @Override
@@ -35,10 +35,9 @@ public class sb7aa extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setNavigationBarColor(getResources().getColor(R.color.color2));
         }
-        butreset = findViewById(R.id.butreset);
         counter = findViewById(R.id.counter);
         clickplus1 = findViewById(R.id.clickplus1);
-
+        swipeRefreshLayout = findViewById(R.id.refreshLayout);
         clickplus1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,10 +54,10 @@ public class sb7aa extends AppCompatActivity {
                 }
             }
         });
-        butreset.setOnClickListener(new View.OnClickListener() {
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
-            public void onClick(View v) {
-                v.startAnimation(buttonClick);
+            public void onRefresh() {
+
                 new AlertDialog.Builder(sb7aa.this)
                         .setTitle("إعَادَة تَعْيِين")
                         .setMessage("هل تريد اعادة المسبحة الي الصفر؟")
