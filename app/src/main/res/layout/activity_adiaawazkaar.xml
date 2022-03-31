@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:layout_weight="3"
     android:background="@color/color4"
     android:gravity="center"
     android:orientation="vertical"
@@ -11,8 +12,9 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
+        android:layout_weight="1"
         android:layout_margin="19dp"
         android:background="@drawable/homebutton"
         android:drawableTop="@drawable/ic_adiaa"
@@ -28,8 +30,9 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
+        android:layout_weight="1"
         android:layout_margin="19dp"
         android:background="@drawable/homebutton"
         android:drawableTop="@drawable/ic_azkaar"
@@ -44,8 +47,9 @@
         android:textStyle="normal|bold"></Button>
 
     <Button
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_margin="19dp"
         android:background="@drawable/homebutton"

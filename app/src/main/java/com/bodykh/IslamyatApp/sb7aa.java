@@ -70,10 +70,12 @@ public class sb7aa extends AppCompatActivity {
                                 SharedPreferences.Editor editor = sharedPreferences.edit();
                                 editor.putString(TEXT, counter.getText().toString());
                                 editor.apply();
+                                swipeRefreshLayout.setRefreshing(false);
                             }
                         })
                         .setNegativeButton("لا", null)
                         .show();
+                swipeRefreshLayout.setRefreshing(false);
             }
         });
         update();
